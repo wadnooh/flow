@@ -319,7 +319,7 @@ class _ElectricalScreenState extends State<ElectricalScreen> {
                               ),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(0xFF0284C7),
-                          shape: BorderRadius.circular(12),
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                         ),
                       ),
                     ),

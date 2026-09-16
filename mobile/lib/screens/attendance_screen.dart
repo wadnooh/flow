@@ -317,7 +317,7 @@ class _AttendanceScreenState extends State<AttendanceScreen> {
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.green[600],
                             disabledBackgroundColor: const Color(0xFF334155),
-                            shape: BorderRadius.circular(14),
+                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
                           ),
                         ),
                       )
@@ -357,7 +357,7 @@ class _AttendanceScreenState extends State<AttendanceScreen> {
                                     ),
                               style: ElevatedButton.styleFrom(
                                 backgroundColor: const Color(0xFFDC2626),
-                                shape: BorderRadius.circular(14),
+                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
                               ),
                             ),
                           ),
