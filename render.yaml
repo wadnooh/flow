@@ -1,20 +1,19 @@
 services:
-  # 1. FastAPI Backend API
+  # 1. FastAPI Backend Service
   - type: web
     name: field-tracker-backend
     env: python
-    buildCommand: "cd backend && pip install -r requirements.txt"
-    startCommand: "cd backend && uvicorn app.main:app --host 0.0.0.0 --port $PORT"
-    envVars:
-      - key: PYTHON_VERSION
-        value: 3.12.0
+    rootDir: backend
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn app.main:app --host 0.0.0.0 --port $PORT"
 
-  # 2. React Admin Dashboard & Simulator
+  # 2. React Frontend Static Site
   - type: web
     name: field-tracker-frontend
     env: static
-    buildCommand: "cd frontend && npm install && npm run build"
-    staticPublishPath: "./frontend/dist"
+    rootDir: frontend
+    buildCommand: "npm install && npm run build"
+    staticPublishPath: "./dist"
     routes:
       - type: rewrite
         source: "/*"
