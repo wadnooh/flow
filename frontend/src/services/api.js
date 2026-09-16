@@ -1,6 +1,8 @@
-// كشف الدومين تلقائياً (rtcco.org للإنتاج أو 127.0.0.1 للتطوير المحلي)
+// كشف الدومين تلقائياً (flow.rtcco.org أو rtcco.org للإنتاج أو 127.0.0.1 للتطوير المحلي)
 const isProductionDomain = typeof window !== 'undefined' && (
-  window.location.hostname.includes('rtcco.org')
+  window.location.hostname.includes('flow.rtcco.org') ||
+  window.location.hostname.includes('rtcco.org') ||
+  window.location.hostname.includes('onrender.com')
 );
 
 const API_BASE_URL = isProductionDomain
