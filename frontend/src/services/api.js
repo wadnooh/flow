@@ -1,5 +1,6 @@
-// كشف الدومين تلقائياً (2-aa.com أو flow.rtcco.org أو rtcco.org للإنتاج أو 127.0.0.1 للتطوير المحلي)
+// كشف الدومين تلقائياً (wadnooh.com أو 2-aa.com أو flow.rtcco.org أو rtcco.org للإنتاج أو 127.0.0.1 للتطوير المحلي)
 const isProductionDomain = typeof window !== 'undefined' && (
+  window.location.hostname.includes('wadnooh.com') ||
   window.location.hostname.includes('2-aa.com') ||
   window.location.hostname.includes('flow.rtcco.org') ||
   window.location.hostname.includes('rtcco.org') ||

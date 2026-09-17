@@ -3,8 +3,8 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ApiService {
-  // الدومين المعتمد للنظام (2-aa.com)
-  static const String baseUrl = "https://2-aa.com/api/v1";
+  // الدومين المعتمد للنظام (wadnooh.com)
+  static const String baseUrl = "https://wadnooh.com/api/v1";
 
   static Future<String?> getToken() async {
     final prefs = await SharedPreferences.getInstance();

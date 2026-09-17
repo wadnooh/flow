@@ -11,8 +11,13 @@ class Settings(BaseSettings):
     # SQLite default database (zero-configuration, easy to deploy)
     DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./electrical_field.db")
     
-    # CORS: Allow local dev, 2-aa.com and rtcco.org production domains
+    # CORS: Allow local dev, wadnooh.com, 2-aa.com and rtcco.org production domains
     BACKEND_CORS_ORIGINS: list[str] = [
+        "https://wadnooh.com",
+        "https://www.wadnooh.com",
+        "https://flow.wadnooh.com",
+        "http://wadnooh.com",
+        "http://www.wadnooh.com",
         "https://2-aa.com",
         "https://www.2-aa.com",
         "http://2-aa.com",
