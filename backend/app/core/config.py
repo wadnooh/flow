@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     # SQLite default database (zero-configuration, easy to deploy)
     DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./electrical_field.db")
     
-    # CORS: Allow local dev, wadnooh.com, 2-aa.com and rtcco.org production domains
+    # CORS: Allow Hostinger production domains (wadnooh.com, 2-aa.com) and local dev
     BACKEND_CORS_ORIGINS: list[str] = [
         "https://wadnooh.com",
         "https://www.wadnooh.com",
@@ -22,12 +22,6 @@ class Settings(BaseSettings):
         "https://www.2-aa.com",
         "http://2-aa.com",
         "http://www.2-aa.com",
-        "https://rtcco.org",
-        "https://www.rtcco.org",
-        "https://api.rtcco.org",
-        "http://rtcco.org",
-        "http://www.rtcco.org",
-        "http://api.rtcco.org",
         "http://localhost:3000",
         "http://127.0.0.1:3000",
         "http://localhost:8000",

@@ -1,0 +1,20 @@
+{
+  "name": "نظام متابعة الكهربائية والفرق الميدانية - RTC",
+  "short_name": "متابعة الكهربائية",
+  "description": "نظام الحضور والانصراف الجغرافي الذكي ومتابعة التغذية الكهربائية والمولدات والفرق الميدانية",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#090d16",
+  "theme_color": "#0284c7",
+  "orientation": "portrait",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
